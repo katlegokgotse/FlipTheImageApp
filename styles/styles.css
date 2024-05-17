@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-top: 200px;
+}
+.cardInner{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    transition: transform 2s;
+    transform-style:preserve-3d;
+}
+.cardContainer:hover .cardInner{
+    transform: rotateY(180deg)
+}
+.frontSide, .backside{
+    width:100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontSide img{
+    width: 100%;
+    border-radius: 25px;
+}
+.backside{
+    transform: rotateY(180deg);
+}
